@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Animation Tab</title>
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+	*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+	.container{
+	background-color:gray;
+	width:50%;
+	margin:50px auto;
+	}
+	.btn-sec{
+	width:max-content;
+	width:0px;
+	height:0px;
+	}
+	.btn-sec h1{
+	padding:20px;
+	color:green;
+	border:2px solid;
+	width:max-content;
+	}
+
+	.btn-sec:hover  .card-popup{
+	opacity:100%;
+	visibility:visible;
+		border:2px solid;
+	width:500px;
+	height:200px;
+	background-color:pink;
+	padding:10px;
+	    transition: 0.5s;
+	position: absolute;
+    top:150px ;
+	}
+	.card-popup{
+	border:2px solid;
+	width:0px;
+	height:0px;
+	background-color:pink;
+	padding:10px;
+	opacity:0;
+	visibility:hidden;
+	transition: 0.5s;
+	top: 0px;
+	position:absolute;
+	}
+</style>
+<body>
+
+	<section class="main">
+
+		<div class="container">
+
+			<div class="btn-sec">
+				<h1>Chennai</h1>	
+				<p > jeeva </p>
+				<!-- HIDE -->
+				<div class="card-popup">				
+					<input type="text" placeholder="type here">
+					<input type="text" placeholder="type here">
+					<input type="text" placeholder="type here">
+					<input type="text" placeholder="type here">
+				</div>
+								
+			</div>
+		</div>
+
+	</section>
+
+
+</body>
+</html>
